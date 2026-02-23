@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOJUMP - Menu</title>
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#0B2BD6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">KOJUMP</div>
+
+        <div class="searchWrap">
+          <input id="searchInput" class="search" type="search" placeholder="Rechercher…" />
+          <button id="clearSearch" class="clearBtn" aria-label="Effacer la recherche" title="Effacer">
+            ×
+          </button>
+          <div class="searchIcon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <path
+                d="M10.5 3a7.5 7.5 0 1 0 4.7 13.3l3.5 3.5a1 1 0 0 0 1.4-1.4l-3.5-3.5A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="heroCard">
+          <img src="./images/hero.jpg" alt="Ambiance du bar" />
+        </section>
+
+        <section class="categoryRow" id="categoryRow"></section>
+        <section class="subcatRow" id="subcatRow"></section>
+
+        <section class="list" id="menuList"></section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
+      }
+    </script>
+  </body>
+</html>
