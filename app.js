@@ -42,7 +42,7 @@ const ITEMS = [
   { main: "soft", sub: null, section: null, name: "Granita - moyenne", desc: "", price: "4€" },
 
   { main: "hot", sub: null, section: null, name: "Café", desc: "Lungo classique", price: "2.50€" },
-  { main: "hot", sub: null, section: null, name: "Expresso", desc: "", price: "2.50€" },
+  { main: "hot", sub: null, section: null, name: "Expresso", desc: "Petit café serré", price: "2.50€" },
   { main: "hot", sub: null, section: null, name: "Décaféiné", desc: "", price: "2.50€" },
   { main: "hot", sub: null, section: null, name: "Latte macchiato", desc: "", price: "3€" },
   { main: "hot", sub: null, section: null, name: "Cappucino", desc: "", price: "3€" },
