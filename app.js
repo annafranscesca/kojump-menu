@@ -51,7 +51,6 @@ const ITEMS = [
   { main: "hot", sub: null, section: null, name: "Supplément chantilly", desc: "", price: "0.50€" },
   { main: "hot", sub: null, section: null, name: "Supplément sirop", desc: "Noisette, vanille ou caramel", price: "0.50€" },
 
-
   { main: "alcohol", sub: "Bières", section: null, name: "Hoegaarden blanche", desc: "", price: "4€" },
   { main: "alcohol", sub: "Bières", section: null, name: "Hoegaarden rosée", desc: "", price: "4€" },
   { main: "alcohol", sub: "Bières", section: null, name: "Jupiler", desc: "", price: "3€" },
@@ -363,4 +362,13 @@ function iconFood() {
     <path d="M42 10v44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
     <path d="M50 10c0 10-8 10-8 20v24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
   </svg>`;
+}
+
+ // Force remove old service workers (cleanup after PWA removal)
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for(let registration of registrations) {
+      registration.unregister();
+    }
+  });
 }
