@@ -45,10 +45,12 @@ const ITEMS = [
   { main: "hot", sub: null, section: null, name: "Expresso", desc: "Petit café serré", price: "2.50€" },
   { main: "hot", sub: null, section: null, name: "Décaféiné", desc: "", price: "2.50€" },
   { main: "hot", sub: null, section: null, name: "Latte macchiato", desc: "", price: "3€" },
-  { main: "hot", sub: null, section: null, name: "Cappucino", desc: "", price: "3€" },
+  { main: "hot", sub: null, section: null, name: "Cappucino", desc: "Avec de la mousse de lait ou de la chantilly", price: "3€" },
   { main: "hot", sub: null, section: null, name: "Chocolat chaud", desc: "", price: "3.50€" },
   { main: "hot", sub: null, section: null, name: "Thé palais des thés", desc: "", price: "3.50€" },
   { main: "hot", sub: null, section: null, name: "Supplément chantilly", desc: "", price: "0.50€" },
+  { main: "hot", sub: null, section: null, name: "Supplément sirop", desc: "Noisette, vanille ou caramel", price: "0.50€" },
+
 
   { main: "alcohol", sub: "Bières", section: null, name: "Hoegaarden blanche", desc: "", price: "4€" },
   { main: "alcohol", sub: "Bières", section: null, name: "Hoegaarden rosée", desc: "", price: "4€" },
